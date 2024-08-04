@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="vd.css">
+</head>
+<body>
+    <div class="container">
+        <div class="stats">
+            <div class="details">
+                <h1>Action To Do</h1>
+                <p>Keep it up!</p>
+                <div id="progressbar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div class="stats-numbers">
+                <p id="numbers">0 / 0</p>
+            </div>
+        </div>
+        <form action="">
+            <input id="taskInput" type="text" placeholder="Write your task">
+            <button id="newtask" type="submit">+</button>
+        </form>
+        <ul class="task-list" id="task-list"></ul>
+    </div>
+    <button class="print_page" onclick="printPage()">
+        <img src="printer.png" alt="print button">
+    </button>
+    <button class="deleteAll">
+        <img src="deleteAll.png" alt="delete button">
+    </button>
+    <script src="vd.js"></script>
+    <script src="print.js"></script>
+</body>
+</html>
